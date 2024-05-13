@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-do App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="todo-app">
+            <h2>To-do App <img src="image/icon.png"></h2>
+            <div class="row">
+                <input onkeyup="addDisable()" type="text" id="input-box" onkeypress="myFunction(event)" placeholder="Görev Giriniz.">
+                <button id="addButton" disabled onclick="addTask()">Ekle</button>
+            </div>
+            <ul id="list-container">
+                <!-- <li class="checked">Görev 1</li>
+                <li>Görev 2</li>
+                <li>Görev 3</li> -->
+            </ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
